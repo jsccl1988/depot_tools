@@ -91,7 +91,7 @@ def GetBuildtoolsPath():
 
   # Overriding the build tools path by environment is highly unsupported and may
   # break without warning.  Do not rely on this for anything important.
-  override = os.environ.get('CHROMIUM_BUILDTOOLS_PATH')
+  override = os.environ.get('BUILDTOOLS_PATH')
   if override is not None:
     return override
 
